@@ -1,0 +1,51 @@
+.SignOutORSignIn_Div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  margin: 0;
+  height: 100vh; /* Ensure it takes full height */
+  position: relative; /* Make it a positioned container for absolute children */
+}
+
+.zooxHeader1 {
+  height: 200px;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.zooxBackground {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.signOutOrSignInLinks {
+  display: flex;
+  position: absolute; /* Position the links above the background image */
+  top: 20%; /* Adjust this to lower the links just below the Zoox header logo */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to truly center the element */
+  text-align: center;
+}
+
+.signOutLink,
+.signInLink {
+  text-decoration: none;
+  color: #fff; /* Adjust the text color as needed */
+  font-size: 1.5rem; /* Adjust the font size */
+  margin: 10px 0; /* Space between the links */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.signOutLink:hover,
+.signInLink:hover {
+  transform: translateY(-5px);
+  color: #58a09b;
+}
+.orHolder {
+  color: #fff; /* Adjust color as needed */
+  margin-left: 10px;
+  margin-right: 10px;
+}
